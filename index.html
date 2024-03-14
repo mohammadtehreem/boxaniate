@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes move1 {
+        0% {
+          right: 100%;
+        }
+        100% {
+          right: 30%;
+        }
+      }
+
+      @keyframes move2 {
+        0% {
+          left: 100%;
+        }
+        100% {
+          left: 50%;
+        }
+      }
+
+      .container div {
+        background-color: blue;
+        width: 70%;
+        height: 30vh;
+        border: 1px solid;
+        position: relative;
+        border-radius: 20px;
+      }
+
+      .one {
+        animation: move1 2s;
+        animation-fill-mode: forwards;
+      }
+
+      .two {
+        animation: move2 2s;
+        animation-fill-mode: forwards;
+      }
+
+      .three {
+        animation: move1 2s;
+        animation-fill-mode: forwards;
+      }
+
+      .four {
+        animation: move2 2s;
+        animation-fill-mode: forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="four"></div>
+    </div>
+  </body>
+</html>
